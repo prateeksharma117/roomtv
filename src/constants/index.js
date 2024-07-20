@@ -25,3 +25,21 @@ export const sideBarLinks = [
     route: "/personal_room",
   },
 ];
+
+export const avatarImages = [
+  {
+    imgUrl: "/images/video.png",
+  },
+  {
+    imgUrl: "/images/encrypted.png",
+  },
+  {
+    imgUrl: "/images/fast.png",
+  },
+  {
+    imgUrl: "/images/network.png",
+  },
+  {
+    imgUrl: "/images/secure.png",
+  },
+];

@@ -1,8 +1,19 @@
+import StreamVideoProvider from "@/providers/StreamClientProvider";
+import { Metadata } from "next";
 import { ReactNode } from "react";
 
-
-const RootLayout = ({ children }:{children:ReactNode}) => {
-  return <main>{children}</main>;
+export const metadata: Metadata= {
+  title: "Room TV",
+  description: "Video Calling App",
+  icons: "/images/logo.png",
 };
 
-export default RootLayout
+const RootLayout = ({ children }: { children: ReactNode }) => {
+  return (
+    <main>
+      <StreamVideoProvider>{children}</StreamVideoProvider>
+    </main>
+  );
+};
+
+export default RootLayout;

@@ -1,6 +1,13 @@
 import Navbar from "@/components/shared/Navbar";
 import Sidebar from "@/components/shared/Sidebar";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Room TV",
+  description: "Video Calling App",
+  icons: "/images/logo.png",
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
